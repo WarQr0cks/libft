@@ -1,10 +1,10 @@
 #include "libft.h"
 
 size_t ft_strlen(const char *s){
-    const char *p = s;
+    int len;
     
-    while (*p) {
-        p++;
+    while (s[len] != 0) {
+        len++;
     }
-    return p-s;
+    return len;
 }
